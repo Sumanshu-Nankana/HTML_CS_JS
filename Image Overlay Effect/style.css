@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+
+body{
+    margin:0;
+    font-family: Rancho, sans-serif;
+    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+}
+
+.container{
+    width: 100%;
+    max-width: 868px;
+    margin: 20px auto;
+}
+h1{
+    text-align: center;
+    color: green;
+    margin: 0;
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+}
+.box{
+    width: 200px;
+    height: 200px;
+    border: 1px solid red;
+    margin: 7px;
+}
+img{
+    width: 200px;
+    height: 200px;
+    transition: 0.5s;
+}
+
+img:hover{
+    filter: grayscale(100%);
+}
+.overlay{
+    position:relative;
+    bottom:27px;
+    text-align: center;
+    color: white;
+    opacity: 0;
+    transition: 0.5s;
+    font-size:larger;
+}
+.box:hover .overlay{
+    opacity: 1;
+}
