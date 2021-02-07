@@ -52,4 +52,12 @@ section ul li.active {
 .product{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media (max-width: 767px){
+    section ul{
+        flex-direction: column;
+        text-align: center;
+    }
 }
